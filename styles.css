@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    color: #080808;
+    background-color: #F3EADF;
+}
+
+
+
+
+
+
+.aboutMeContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F1CF98;
+    padding: 20px 100px;
+    font-size: 3.5em;
+}
+
+
+.aboutMeText{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #e9e9e9; /* Açık renkli arka plan */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.icons{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+
+
+.aboutMePhoto img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2%;
+    border: 5px solid #e9e9e9;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.Allprojects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    gap: 20px;
+
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #274D3B; 
+    color:lightgoldenrodyellow;
+    padding: 20px;
+    max-width: 300px; /* Kartın maksimum genişliği */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Hafif yuvarlak köşeler */
+    margin: 20px; /* Kartlar arası boşluk */
+}
+
+
+.projectImage img {
+    width: 100%; /* Resmin kutuya sığmasını sağlar */
+    height: auto; /* Resmin orijinal en-boy oranını korur */
+    border-radius: 10px; /* Resmin köşelerini yuvarlar */
+}
+
+
+.projectNameandLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px; 
+}
+
+.projectName {
+    font-size: 1em; 
+}
+
+
+.icons {
+    display: flex;
+    align-self: center;
+    gap: 10px; /* İkonlar arası boşluk */
+}
+
+
+.icons img {
+    display: flex; /* Linkleri esnek kutu olarak ayarla */
+    align-items: center;
+    width: 18px; /* İkonların genişliği */
+    height: 18px; /* İkonların yüksekliği */
+    vertical-align: middle;
+    gap: 10px;
+}
+
+
+.projectText {
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 10px; /* Üstten boşluk */
+}
+
+
+.contactMeSection{
+    background-color: #F1CF98;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.contactMeContent {
+    padding: 20px;
+    color: white; /* Metin rengi */
+    max-width: 40%;
+  }
+  
+
+  
+  .contactMeImage img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px; 
+
+   
+  }
+
+
+
+  @media screen and (max-width: 768px) { 
+
+    .aboutMeContent {
+      flex-direction: column;
+      align-items: center; 
+      padding: 20px; 
+    }
+  
+    .aboutMeText {
+      order: 2; 
+      margin-top: 20px; 
+    }
+  
+    .aboutMePhoto img {
+      order: 1; 
+    }
+  }
+  
